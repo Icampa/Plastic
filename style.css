@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:whitesmoke;
+}
+/*---------Type----------*/
+
+h1 {
+    font-family: 'Helvetica Neue';
+    font-size: 8vw;
+    line-height:7.5vw;
+    font-weight: 500;
+    width: 8ch;
+    letter-spacing: 3px;
+}
+
+h2 {
+    font-family: 'Helvetica Neue';
+    font-size: 2.5vw;
+    font-weight: 500;
+    max-width:32ch;
+}
+
+p{
+    font-family: 'Helvetica Neue';
+    font-size: 1.5vw;
+    font-weight: 500;
+    line-height: 2vw;
+}
+
+@media screen and (max-width: 940px){
+p {
+    font-size: 2.5vw; 
+    line-height:3vw
+}
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+@media screen and (max-width: 940px){
+#where {
+    font-size: 17vw;
+    line-height:16.5vw;
+    width: 10ch;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+}
+
+
+/*---------Landing----------*/
+
+
+.nav-left{
+    position: absolute;
+    left: 10px;
+    font-family: 'Helvetica Neue';
+    font-size: 2.5em;
+    font-weight: 500;
+    text-align: left;
+    margin-top: .5em;
+    margin-left: .5em;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 940px){
+div.nav-left {
+    font-size: 1.5em;
+    width: 100%;
+    padding-bottom: 0px;
+}
+}
+
+.nav-right{
+    position: absolute;
+    right: 10px;
+    font-family: 'Helvetica Neue';
+    font-size: 2.5em;
+    font-weight: 500;
+    margin-top: .5em;
+    margin-right: .5em;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 940px){
+div.nav-right {
+    font-size: 1.5em;
+}
+}
+
+iframe{
+    left:10px;
+    position: absolute;
+    justify-content: left;
+    padding-top:0;
+    top:40px;
+    justify-content: right;
+}
+
+.intro{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /*---background-image: url(intro2.png);---*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    padding-top:50px;
+}
+
+
+
+.grid{
+    display: grid;
+    grid-template-columns:repeat(25, 1fr); 
+    grid-auto-flow: row;
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+    border-radius: 34px;
+}
+
+.box{
+    width:3.6vw;
+    height: 5.7vh;
+    border-style: solid;
+    border-width: 1px;
+    border-color: blue;
+}
+
+@media screen and (max-width: 940px){
+div.box {
+    display: none;
+    width:1vw;
+    height: 1vh;
+}
+}
+
+.canvas{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+
+/*---------Intro Bag Scroll----------*/
+
+
+
+/*---------World Globe----------*/
+
+.canvasParent {
+    position: absolute;
+    display: block;
+    justify-content: left;
+}
+
+
+
+/*---------Sections----------*/
+
+.column {
+  float: left;
+  width: 30%;
+  margin-left: 1.6vw;
+  margin-right:1.6vw;
+  border-style: solid;
+  border-color:blue;
+  border-width: 2px;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 940px){
+div.column {
+    width: 90%;
+    margin-bottom: 10px;
+}
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.animation {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.bag {
+    position: absolute;
+    height: 250px;
+    top: 50%;
+    left: 0%;
+}
+
+.world{
+    justify-content: center;
+    align-items: center;
+    mix-blend-mode: darken;
+
+    position: relative;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+div.world h2, h1 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+
+
+.time{
+    justify-content: center;
+    align-items: center;
+    mix-blend-mode: darken;
+
+    position: relative;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.living{
+    justify-content: center;
+    align-items: center;
+    mix-blend-mode: darken;
+ 
+    position: relative;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.patch{
+    justify-content: center;
+    align-items: center;
+    mix-blend-mode: darken;
+
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.where{
+    justify-content: center;
+    align-items: center;
+    mix-blend-mode: darken;
+
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.end{
+    justify-content: center;
+    align-items: center;
+    mix-blend-mode: darken;
+
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.close{
+    justify-content: center;
+    align-items: center;
+    mix-blend-mode: darken;
+
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+/*---------Global Edits----------*/
+
+::-webkit-scrollbar {
+    width: 0px; 
+    background: transparent; 
+}
